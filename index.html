@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mackbook pro</title>
+
+    <!-- FaveIcon -->
+    <link rel="icon" href="images/download.png" type="image/gif" sizes="16x16">
+
+    <!-- Bootstrap cdn Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <!-- Item Checkout page -->
+        <section class="container bg-light">
+            <div class="row mx-auto gx-5">
+                <div class="col">
+                    <img src="images/mac.png" class="img-fluid" alt="...">
+                </div>
+
+                <!-- Customize Product Items -->
+                <div class="col">
+                    <h1>Customize Your Blue 24-inch iMac with Apple M1 chip.</h1>
+                    <p>Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU, and
+                        16-core Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt/USB 4 ports Magic
+                        Mouse Magic Keyboard- US English</p>
+
+                    <!-- Customize Memory -->
+                    <h3 class=" mt-3">Memory</h3>
+                    <button id="memory-type" type="button" class="btn btn-outline-secondary">8GB unified
+                        memory</button>
+                    <button id="best-memory" type="button" class="btn btn-outline-secondary">16GB unified
+                        memory</button>
+
+                    <!-- Customize SSD Storage -->
+                    <h3 class=" mt-3">Storage</h3>
+                    <button id="default-ssd" type="button" class="btn btn-outline-secondary">256GB SSD storage</button>
+                    <button id="medium-ssd" type="button" class="btn btn-outline-secondary">512GB SSD storage</button>
+                    <button id="best-ssd" type="button" class="btn btn-outline-secondary">1TB Storag</button>
+
+                    <!-- Delivery Option -->
+                    <H3 class=" mt-3">Choose your delivery option</H3>
+                    <button id="default-delivery" type="button" class="btn btn-outline-secondary">Friday, Aug 25 FREE
+                        Prime Delivery</button>
+                    <button id="fist-delivery" type="button" class="btn btn-outline-secondary">Friday, Aug 21 Delivery
+                        Charge</button>
+
+                    <!-- Calculate Price  -->
+                    <div class="row my-5">
+                        <div class="col-8">
+                            <div class="d-flex justify-content-between">
+                                <h5>Best Price</h5>
+                                <h5>$ <span id="default-price">1299</span></h5>
+                            </div>
+                            <hr class="my-0">
+
+                            <div class="d-flex justify-content-between">
+                                <h5>Extra Memory Cost</h5>
+                                <h5>$ <span id="memory-price">0</span></h5>
+                            </div>
+
+                            <hr class="my-0">
+                            <div class="d-flex justify-content-between">
+                                <h5>Extra Storage Cost</h5>
+                                <h5>$<span id="storage-price">0</span></h5>
+                            </div>
+                            <hr class="my-0">
+
+                            <div class="d-flex justify-content-between">
+                                <h5>Delivery charge</h5>
+                                <h5>$ <span id="delivery-charge">0</span></h5>
+                            </div>
+
+                            <hr style="height: 3px;" class="my-0 text-dark">
+                            <div class="d-flex justify-content-between">
+                                <h5>Total Price</h5>
+                                <h5>$<span id="total-price">1299</span></h5>
+                            </div>
+                            <hr>
+
+                            <!-- Apply promo Code -->
+                            <p>Add promo Code</p>
+                            <input id="promo-code" type="text">
+                            <button id="apply-promo-code" type="button" class="btn btn-danger">Apply</button>
+                        </div>
+                        <div class="col-4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="d-flex justify-content-center text-danger">
+                <h2>Total Price</h2>
+                <h2>$ <span id="final-Price">1299</span></h2>
+            </div>
+        </section>
+    </main>
+    <!-- External JavaScript file Link -->
+    <script src="js/assignment-5.js"></script>
+</body>
+
+</html>
