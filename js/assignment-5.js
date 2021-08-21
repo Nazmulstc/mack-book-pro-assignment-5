@@ -3,17 +3,14 @@ function updatePrice(price, id) {
     extraPrice.innerText = price;
 
     // Updtae Total Price
-    let totalPrice = document.getElementById('total-price');
-    const defaultPrice = document.getElementById('default-price');
-    const defaultPriceNumber = parseFloat(defaultPrice.innerText);
-    const memoryPrice = document.getElementById('memory-price');
-    const memoryPriceNumber = parseFloat(memoryPrice.innerText);
-    const storagePrice = document.getElementById('storage-price');
-    const storagePriceNumber = parseFloat(storagePrice.innerText);
-    const deliveryCharge = document.getElementById('delivery-charge');
-    const deliveryChargeNumber = parseFloat(deliveryCharge.innerText);
+    const totalPrice = document.getElementById('total-price');
+    const defaultPrice = parseFloat(document.getElementById('default-price').innerText);
+    const memoryPrice = parseFloat(document.getElementById('memory-price').innerText);
+    const storagePrice = parseFloat(document.getElementById('storage-price').innerText);
+    const deliveryCharge = parseFloat(document.getElementById('delivery-charge').innerText);
 
-    totalPrice.innerText = defaultPriceNumber + memoryPriceNumber + storagePriceNumber + deliveryChargeNumber;
+
+    totalPrice.innerText = defaultPrice + memoryPrice + storagePrice + deliveryCharge;
 
     // Adjust on Final Price
     const finalPrice = document.getElementById('final-Price');
@@ -51,7 +48,7 @@ document.getElementById('fist-delivery').addEventListener('click', function () {
     updatePrice(20, 'delivery-charge');
 })
 
-// Update Final Price
+// Apply promo code for discount Price
 document.getElementById('apply-promo-code').addEventListener('click', function () {
     const promoCode = document.getElementById('promo-code');
     const finalPrice = document.getElementById('final-Price');
